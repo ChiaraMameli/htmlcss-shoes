@@ -1,7 +1,3 @@
-/*ED3833 rosso
-3A811D verde
-FEF851 giallo*/
-
 /* GENERICS */
 
 *{
@@ -10,18 +6,28 @@ FEF851 giallo*/
     box-sizing: border-box;
 }
 
+body {
+    font-family:'Rubik Mono One', sans-serif;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
 /* UTILS */
 
-.bg-red {
+#bg-red {
     background-color: #ED3833;
 }
 
-.bg-green {
+#bg-green {
     background-color: #3A811D;
 }
 
-.bg-yellow {
+#bg-yellow {
     background-color: #FEF851;
+}
+
+.d-flex {
+    display: flex;
+
 }
 
 /* SECTIONS */
@@ -30,10 +36,6 @@ section {
     height: 100vh;
     width: 100%;
     position: relative;
-}
-
-.bg-red {
-    background-color: #ED3833;
 }
 
 .contained {
@@ -48,13 +50,51 @@ h1 {
     color: #FEF851;
     text-align: center;
     font-size: 45px;
-    font-family:'Rubik Mono One', sans-serif;
 }
 
 .shoe {
     width: 700px;
 }
 
-.bg-yellow .contained h1{
+#bg-yellow .contained h1{
     color: #3A811D;
+}
+ 
+/* NAVBAR */
+
+#navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+ul {
+    padding: 30px;
+}
+
+li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 15px;
+    margin-left: 30px;
+    background-color: #FFF;
+    border-radius: 50%;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+}
+
+#red a:hover {
+    color: #ED3833;
+}
+
+#green a:hover {
+    color: #3A811D;
+}
+
+#yellow a:hover {
+    color: #FEF851;
 }
