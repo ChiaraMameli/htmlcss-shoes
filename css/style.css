@@ -9,8 +9,12 @@
 body {
     font-family:'Rubik Mono One', sans-serif;
     overflow: hidden;
+}
+
+html {
     scroll-behavior: smooth;
 }
+
 /* UTILS */
 
 #bg-red {
