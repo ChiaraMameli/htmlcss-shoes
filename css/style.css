@@ -1,0 +1,60 @@
+/*ED3833 rosso
+3A811D verde
+FEF851 giallo*/
+
+/* GENERICS */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* UTILS */
+
+.bg-red {
+    background-color: #ED3833;
+}
+
+.bg-green {
+    background-color: #3A811D;
+}
+
+.bg-yellow {
+    background-color: #FEF851;
+}
+
+/* SECTIONS */
+
+section {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.bg-red {
+    background-color: #ED3833;
+}
+
+.contained {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    text-transform: uppercase;
+    color: #FEF851;
+    text-align: center;
+    font-size: 45px;
+    font-family:'Rubik Mono One', sans-serif;
+}
+
+.shoe {
+    width: 700px;
+}
+
+.bg-yellow .contained h1{
+    color: #3A811D;
+}
